@@ -1,0 +1,12 @@
+<form action="/create_details/" method="POST">
+    {% csrf_token %}
+    <table>{{form}}</table>
+    <input type="submit">
+</form>
+<br>
+<br>
+<form action="/search/" method="POST">
+    {% csrf_token %}
+    Search bus number :<input type="text" name="bno">
+    <input type="submit">
+</form>

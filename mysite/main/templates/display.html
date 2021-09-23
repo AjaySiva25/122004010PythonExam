@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>DISPLAY</title>
+</head>
+{% for b in bus %}
+    <p>Bus number    :{{b.bno}}</p>
+    <p>Bus Route     :{{b.broute}}</p>
+    <p>Bus Timings   :{{b.btime}}</p>
+    <p>Bus Conductor :{{b.bcon}}</p>
+    <p>Bus Driver    :{{b.bdri}}</p>
+    <hr>
+{% endfor %}
+
+<a href="http://127.0.0.1:8000/">Home</a>
+</html>
